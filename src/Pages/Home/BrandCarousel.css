@@ -1,0 +1,114 @@
+/* BrandCarousel.css */
+.brand-carousel-section {
+  background: linear-gradient(135deg, var(--theme-color) 0%, var(--theme-color2) 100%);
+  padding: 25px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-carousel-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/pattern.png') repeat;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.brand-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.brand-carousel-track {
+  display: flex;
+  align-items: center;
+  animation: scrollText 30s linear infinite;
+  white-space: nowrap;
+  gap: 0;
+}
+
+.brand-tag {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+  flex-shrink: 0;
+}
+
+.tag-text {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tag-dot {
+  color: var(--yellow-color);
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: -5px;
+}
+
+.brand-tag:hover .tag-text {
+  color: var(--yellow-color);
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.brand-carousel-wrapper:hover .brand-carousel-track {
+  animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brand-carousel-section {
+    padding: 20px 0;
+  }
+  
+  .tag-text {
+    font-size: 16px;
+  }
+  
+  .tag-dot {
+    font-size: 20px;
+  }
+  
+  .brand-tag {
+    gap: 10px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tag-text {
+    font-size: 14px;
+  }
+  
+  .brand-tag {
+    gap: 8px;
+    padding: 0 12px;
+  }
+  
+  .brand-carousel-track {
+    animation-duration: 20s;
+  }
+}

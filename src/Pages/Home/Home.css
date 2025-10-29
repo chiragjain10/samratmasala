@@ -1,0 +1,53 @@
+.banner2,
+.banner3 {
+    height: 100vh;
+    background: url(/images/banner2.png) no-repeat fixed;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner3 {
+    background: url(/images/banner3.png) no-repeat fixed;
+}
+
+.banner2 h2,
+.banner3 h2 {
+    font-size: 70px;
+}
+
+.banner2 p,
+.banner3 p {
+    font-size: 20px;
+}
+
+@media (max-width: 991px) {
+
+    .banner2,
+    .banner3 {
+        height: 47vh;
+        background-size: 100% 100%;
+        background-attachment: scroll;
+    }
+
+    .banner2 h2,
+    .banner3 h2 {
+        font-size: 30px;
+    }
+
+    .banner2 p,
+    .banner3 p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner2,
+    .banner3 {
+        height: 37vh;
+    }
+    .contents{
+        display: none;
+    }
+}
