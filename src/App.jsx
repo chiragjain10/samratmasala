@@ -22,7 +22,7 @@ function App() {
   const triggerLoading = () => {
     if (loadingTimerRef.current) clearTimeout(loadingTimerRef.current)
     setIsLoading(true)
-    loadingTimerRef.current = setTimeout(() => setIsLoading(false), 2000)
+    loadingTimerRef.current = setTimeout(() => setIsLoading(false), 1000)
   }
 
   useEffect(() => {
@@ -36,36 +36,51 @@ function App() {
         })
         window.AOS.refreshHard()
       } catch (_) {
-        // no-op
       }
     }
   }, [])
 
-  // Scroll to top on route change and show preloader for at least 2s
   useEffect(() => {
     window.scrollTo(0, 0)
     triggerLoading()
+    if (window.AOS) {
+      try {
+        window.AOS.refreshHard()
+        setTimeout(() => {
+          try { window.AOS.refresh() } catch (_) { /* no-op */ }
+        }, 0)
+      } catch (_) {
+      }
+    }
   }, [location.pathname])
 
-  // Show preloader until full window load, then open popup after 3s (once per refresh)
   useEffect(() => {
     let popupTimer
-
     const onLoaded = () => {
       popupTimer = setTimeout(() => setShowPopup(true), 3000)
     }
-
     if (document.readyState === 'complete') {
       onLoaded()
     } else {
       window.addEventListener('load', onLoaded, { once: true })
     }
-
     return () => {
       if (popupTimer) clearTimeout(popupTimer)
       window.removeEventListener('load', onLoaded)
     }
   }, [])
+
+  useEffect(() => {
+    if (!isLoading && window.AOS) {
+      try {
+        window.AOS.refreshHard()
+        setTimeout(() => {
+          try { window.AOS.refresh() } catch (_) { /* no-op */ }
+        }, 0)
+      } catch (_) {
+      }
+    }
+  }, [isLoading])
 
   useEffect(() => {
     return () => {

@@ -5220,6 +5220,7 @@ ol.wp-block-rss {
 .th-btn.mobile {
     background: var(--black-color);
     padding: 10px 20px;
+    min-width: initial;
 }
 
 .social-links .social-title {

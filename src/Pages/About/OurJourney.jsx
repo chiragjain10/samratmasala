@@ -3,12 +3,12 @@ import './OurJourney.css';
 const OurJourney = () => {
   const milestones = [
     {
-      year: "1968",
+      year: "—",
       title: "Foundation",
       description: "The foundation of Samrat Masale was established by Shri Shyamsundar Ji Vijayvergiya."
     },
     {
-      year: "1968",
+      year: "—",
       title: "A Pioneer in Packaged Spices",
       description: "At a time when households ground whole spices at home (masale ghar par taiyar kiye jate the), he introduced a high-quality, ready-to-use alternative."
     },
@@ -35,7 +35,7 @@ const OurJourney = () => {
   ];
 
   return (
-    <section className="journey-section space-bottom bg-smoke2">
+    <section className="journey-section space-bottom bg-smoke2 pb-1">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -52,23 +52,16 @@ const OurJourney = () => {
         <div className="journey-timeline">
           {milestones.map((milestone, index) => (
             <div key={index} className="timeline-item">
-              <div className="timeline-year">
+              <div className="timeline-year" data-aos="fade-up">
                 <span>{milestone.year}</span>
               </div>
-              <div className="timeline-content">
+              <div className="timeline-content" data-aos="fade-up">
                 <h4 className="timeline-title">{milestone.title}</h4>
                 <p className="timeline-text">{milestone.description}</p>
               </div>
               <div className="timeline-dot"></div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-5">
-          <a href="/contact" className="th-btn">
-            Explore Our Products
-            <i className="fas fa-chevron-right ms-2"></i>
-          </a>
         </div>
       </div>
     </section>

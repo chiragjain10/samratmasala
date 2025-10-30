@@ -2,7 +2,7 @@ import './ProductUsage.css';
 
 const ProductUsage = ({ product }) => {
   return (
-    <section className="product-usage space">
+    <section className="product-usage space" data-aos="fade-up">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">

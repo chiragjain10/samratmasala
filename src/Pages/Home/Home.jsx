@@ -12,11 +12,11 @@ const Home = () => {
             <ProductsSection />
             <section className='banner3'>
                 <div className="container">
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         <div className="col-md-6">
                             <div className="contents">
                                 <h2>59+ Years of Crafting Pure Spice Excellence.</h2>
-                                <p>Since 1965, spicing every Indian kitchen with tradition, where every spice reflects timeless heritage and a promise of wholesome delight.</p>
+                                <p>Since 1968, spicing every Indian kitchen with tradition, where every spice reflects timeless heritage and a promise of wholesome delight.</p>
                             </div>
                         </div>
                         <div className="col-md-6"></div>
@@ -26,7 +26,7 @@ const Home = () => {
             <About />
             <section className='banner2'>
                 <div className="container">
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         <div className="col-md-6">
                             <div className="contents">
                                 <h2>Samrat Masala – The Royal Taste of Tradition</h2>

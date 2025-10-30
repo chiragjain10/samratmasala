@@ -19,15 +19,14 @@ const FounderDetails = () => {
                 <img src="/img/theme-img/title_icon.svg" alt="icon" />
                 Our Founder
               </span>
-              <h2 className="sec-title">The Founding Story of Samrat Masale</h2>
-              <p className="sec-text">
-                The foundation of Samrat Masale was established in 1968 by Shri Shyamsundar Ji Vijayvergiya. At that time,
+              <h2 className="sec-title" data-aos="fade-up">The Founding Story of Samrat Masale</h2>
+              <p className="sec-text" data-aos="fade-up">The foundation of Samrat Masale was established in 1968 by Shri Shyamsundar Ji Vijayvergiya. At that time,
                 Indian households typically sourced whole spices and ground them at home (masale ghar par taiyar kiye jate the)
                 to ensure freshness and purity. Recognizing a clear need and opportunity, he pioneered a high‑quality,
                 ready‑to‑use alternative to the laborious home‑grinding process.
               </p>
               
-              <div className="founder-quote">
+              <div className="founder-quote" data-aos="fade-up">
                 <div className="quote-icon">
                   <i className="fas fa-quote-left"></i>
                 </div>
@@ -37,15 +36,10 @@ const FounderDetails = () => {
                 </p>
               </div>
 
-              <div className="founder-info">
+              <div className="founder-info" data-aos="fade-up">
                 <h4 className="founder-name">Shri Shyamsundar Ji Vijayvergiya</h4>
                 <p className="founder-position">Founder</p>
               </div>
-
-              <a href="/contact" className="th-btn">
-                Get In Touch
-                <i className="fas fa-chevron-right ms-2"></i>
-              </a>
             </div>
           </div>
         </div>

@@ -19,12 +19,12 @@ const About = () => {
                                     <img
                                         src="/images/turmeric.png"
                                         alt="Samrat Masala Products"
-                                        style={{width: "75%"}}
+                                        style={{ width: "75%" }}
                                     />
                                 </div>
                                 <div className="year-counter">
                                     <div className="year-counter_number">
-                                        <span className="counter-number">65</span>+
+                                        <span className="counter-number">59</span>+
                                     </div>
                                     <p className="year-counter_text">Years Experience</p>
                                 </div>
@@ -40,17 +40,13 @@ const About = () => {
                                         />
                                         About Our Company
                                     </span>
-                                    <h2 className="sec-title">Authentic Taste Starts With Pure Masalas</h2>
+                                    <h2 className="sec-title">The Founding Story of Samrat Masale</h2>
                                     <p className="sec-text">
-                                        To Indians, taste means masala. India, one of the oldest civilizations, has always cherished
-                                        the authentic flavors of traditional spices. This is exactly why Samrat Masala stands as the
-                                        hallmark for serving the genuine taste of exotic Indian masalas to households across the nation.
-
-                                        Samrat Masala is one of the most trusted brands when it comes to pure and authentic masala
-                                        manufacturers in India. In our journey, it has always been our sole endeavor to promote the
-                                        distinct taste of our cultural heritage through our premium quality products - Turmeric Powder,
-                                        Red Chilli Powder, Coriander Powder, and Garam Masala.
+                                        Founded in 1968, the Indian spice landscape was distinctly different from today. At that time, it was common practice for families, particularly housewives, to source whole spices and grind them at home (masale ghar par taiyar kiye jate the). This ensured maximum freshness and purity. Packaged, ready-to-use spices were not yet the norm in Indian households.
+                                        It was in this market context that Shri Shyamsundar Ji Vijayvergiya recognized a clear need and opportunity. He stepped in as a pioneer, offering an alternative to the laborious home-grinding process.
                                     </p>
+                                    <p className="sec-text">Shri Shyamsundar Ji's success was not an overnight feat; it was a testament to his dedication to core values:</p>
+                                    <p className="sec-text">Hard Work and Dedication: He built the business from the ground up through sheer effort and unwavering commitment.</p>
                                 </div>
                                 <div data-aos="fade-up">
                                     <Link to="/about" className="th-btn">

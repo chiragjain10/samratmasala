@@ -19,9 +19,19 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+
+    const phoneNumber = '919300688888'; // WhatsApp number without + or spaces
+    const message = `New enquiry from website:\n\n` +
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone}\n` +
+      `Subject: ${formData.subject}\n` +
+      `Message: ${formData.message}`;
+
+    const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(waUrl, '_blank');
+
     setFormData({
       name: '',
       email: '',
@@ -37,12 +47,12 @@ const ContactForm = () => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="form-content">
-              <span className="sub-title">
+              <span className="sub-title" data-aos="fade-down">
                 <img src="/img/theme-img/title_icon.svg" alt="icon" />
                 Send Message
               </span>
-              <h2 className="sec-title">Get In Touch With Us</h2>
-              <p className="sec-text">
+              <h2 className="sec-title" data-aos="fade-down">Get In Touch With Us</h2>
+              <p className="sec-text" data-aos="fade-down">
                 Have questions about our premium masalas or want to discuss bulk orders? 
                 Fill out the form and our team will get back to you within 24 hours.
               </p>
@@ -67,7 +77,7 @@ const ContactForm = () => {
           <div className="col-lg-6">
             <div className="contact-form-wrapper">
               <form onSubmit={handleSubmit} className="contact-form">
-                <div className="row gy-4">
+                <div className="row gy-4" data-aos="fade-up">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input

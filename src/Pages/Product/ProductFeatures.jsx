@@ -7,15 +7,15 @@ const ProductFeatures = ({ product }) => {
         <div className="row">
           <div className="col-lg-6">
             <div className="features-content">
-              <span className="sub-title">
+              <span className="sub-title" data-aos="fade-down">
                 <img src="/img/theme-img/title_icon.svg" alt="icon" />
                 Why Choose {product.name}?
               </span>
-              <h2 className="sec-title">Key Features & Benefits</h2>
+              <h2 className="sec-title" data-aos="fade-down">Key Features & Benefits</h2>
               
               <div className="features-list">
                 {product.features.map((feature, index) => (
-                  <div key={index} className="feature-item">
+                  <div key={index} className="feature-item" data-aos="fade-down">
                     <div className="feature-icon">
                       <i className="fas fa-check"></i>
                     </div>
@@ -28,10 +28,10 @@ const ProductFeatures = ({ product }) => {
           
           <div className="col-lg-6">
             <div className="benefits-content">
-              <h3 className="benefits-title">Health Benefits</h3>
+              <h3 className="benefits-title" data-aos="fade-down">Health Benefits</h3>
               <div className="benefits-list">
                 {product.benefits.map((benefit, index) => (
-                  <div key={index} className="benefit-item">
+                  <div key={index} className="benefit-item" data-aos="fade-down">
                     <div className="benefit-icon">
                       <i className="fas fa-heart"></i>
                     </div>

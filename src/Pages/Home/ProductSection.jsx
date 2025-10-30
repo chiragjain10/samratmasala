@@ -46,7 +46,7 @@ const ProductsSection = () => {
     ];
 
     return (
-        <section className="products-love-section space bg-smoke">
+        <section className="products-love-section space bg-smoke" data-aos="fade-up">
             <div className="container">
                 <div className="row">
                     <div className="col-12">

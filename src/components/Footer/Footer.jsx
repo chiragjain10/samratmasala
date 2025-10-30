@@ -139,16 +139,11 @@ const Footer = () => {
                 <div className="copyright-wrap">
                     <div className="container">
                         <div className="row gy-2 align-items-center">
-                            <div className="col-md-8">
+                            <div className="col-md-12 text-center">
                                 <p className="copyright-text">
-                                    Copyright <i className="fal fa-copyright"></i> {new Date().getFullYear()}
+                                    Copyright <i className="fal fa-copyright"></i> 1968
                                     <Link to="/"> Samrat Masala</Link>. All Rights Reserved.
                                 </p>
-                            </div>
-                            <div className="col-md-4 text-center text-md-end">
-                                <div className="payment-img">
-                                    <img src="/img/normal/payment_methods.png" alt="Payment Methods" />
-                                </div>
                             </div>
                         </div>
                     </div>

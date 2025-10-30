@@ -6,9 +6,7 @@ const ContactInfo = () => {
       icon: "fas fa-map-marker-alt",
       title: "Our Location",
       details: [
-        "Office / Manufacturing Unit:",
-        "Khasra No.32/9, 12/1, Dhaturi,",
-        "Village Dhaturi, Sonipat - 131039"
+        "59/5 Pardeshi Pura, Indore",
       ],
       link: "#"
     },
@@ -17,7 +15,6 @@ const ContactInfo = () => {
       title: "Phone Number",
       details: [
         "+91 9300688888",
-        "+91-9876543210"
       ],
       link: "tel:++91 9300688888"
     },

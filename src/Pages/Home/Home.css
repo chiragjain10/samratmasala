@@ -1,7 +1,7 @@
 .banner2,
 .banner3 {
     height: 100vh;
-    background: url(/images/banner2.png) no-repeat fixed;
+    background: url(/images/banner2.png) no-repeat;
     background-size: 100% 100%;
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,8 @@
 }
 
 .banner3 {
-    background: url(/images/banner3.png) no-repeat fixed;
+    background-image: url(/images/banner3.png);
+    background-attachment: fixed;
 }
 
 .banner2 h2,

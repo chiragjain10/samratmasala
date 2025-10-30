@@ -7,8 +7,8 @@ const ContactMap = () => {
         <div className="row">
           <div className="col-12">
             <div className="title-area text-center">
-              <h2 className="sec-title">Find Us Here</h2>
-              <p className="sec-text">
+              <h2 className="sec-title" data-aos="fade-down">Find Us Here</h2>
+              <p className="sec-text" data-aos="fade-down">
                 Visit our manufacturing unit or get in touch with us for any queries
               </p>
             </div>
@@ -20,12 +20,12 @@ const ContactMap = () => {
             <div className="map-container">
               {/* You can embed Google Maps here */}
               <div className="map-placeholder">
-                <div className="map-content">
+                <div className="map-content" data-aos="fade-down">
                   <i className="fas fa-map-marker-alt"></i>
                   <h4>Our Location</h4>
-                  <p>Khasra No.32/9, 12/1, Dhaturi, Village Dhaturi, Sonipat - 131039</p>
+                  <p>59/5 Pardeshi Pura, Indore</p>
                   <a 
-                    href="https://maps.google.com/?q=Khasra+No.32/9,+12/1,+Dhaturi,+Village+Dhaturi+Sonipat+-131039" 
+                    href="https://maps.google.com/?q=59/5 Pardeshi Pura, Indore" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="th-btn"

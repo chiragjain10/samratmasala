@@ -12,16 +12,16 @@ const RelatedProducts = ({ currentProduct }) => {
         <div className="row">
           <div className="col-12">
             <div className="title-area text-center">
-              <span className="sub-title">
+              <span className="sub-title" data-aos="fade-down">
                 <img src="/img/theme-img/title_icon.svg" alt="icon" />
                 Explore More
               </span>
-              <h2 className="sec-title">Other Premium Products</h2>
+              <h2 className="sec-title" data-aos="fade-down">Other Premium Products</h2>
             </div>
           </div>
         </div>
         
-        <div className="row justify-content-center gy-4">
+        <div className="row justify-content-center gy-4" data-aos="fade-up">
           {relatedProducts.map((product) => (
             <div key={product.id} className="col-lg-3 col-md-6">
               <div className="related-product-card">
