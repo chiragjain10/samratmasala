@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="col-lg-4 text-center">
                         <i className="fa fa-envelope"></i>
                         <span>BULK ORDER ENQUIRY?</span><br />
-                        <span>info@samratmasala.com</span>
+                        <span>info@samratmasalaindia.com</span>
                     </div>
                     <div className="col-lg-4 text-center">
                         <i className="fa fa-check-square"></i>
@@ -123,8 +123,8 @@ const Footer = () => {
                                                 <i className="fas fa-envelope"></i>
                                             </div>
                                             <p className="info-box_text">
-                                                <Link to="mailto:info@samratmasala.com" className="info-box_link">
-                                                    info@samratmasala.com
+                                                <Link to="mailto:info@samratmasalaindia.com" className="info-box_link">
+                                                    info@samratmasalaindia.com
                                                 </Link>
                                             </p>
                                         </div>
@@ -141,7 +141,7 @@ const Footer = () => {
                         <div className="row gy-2 align-items-center">
                             <div className="col-md-12 text-center">
                                 <p className="copyright-text">
-                                    Copyright <i className="fal fa-copyright"></i> 1968
+                                    Copyright <i className="fal fa-copyright"></i> 1965
                                     <Link to="/"> Samrat Masala</Link>. All Rights Reserved.
                                 </p>
                             </div>

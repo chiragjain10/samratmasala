@@ -42,7 +42,7 @@ const About = () => {
                                     </span>
                                     <h2 className="sec-title">The Founding Story of Samrat Masale</h2>
                                     <p className="sec-text">
-                                        Founded in 1968, the Indian spice landscape was distinctly different from today. At that time, it was common practice for families, particularly housewives, to source whole spices and grind them at home (masale ghar par taiyar kiye jate the). This ensured maximum freshness and purity. Packaged, ready-to-use spices were not yet the norm in Indian households.
+                                        Founded in 1965, the Indian spice landscape was distinctly different from today. At that time, it was common practice for families, particularly housewives, to source whole spices and grind them at home (masale ghar par taiyar kiye jate the). This ensured maximum freshness and purity. Packaged, ready-to-use spices were not yet the norm in Indian households.
                                         It was in this market context that Shri Shyamsundar Ji Vijayvergiya recognized a clear need and opportunity. He stepped in as a pioneer, offering an alternative to the laborious home-grinding process.
                                     </p>
                                     <p className="sec-text">Shri Shyamsundar Ji's success was not an overnight feat; it was a testament to his dedication to core values:</p>

@@ -76,8 +76,8 @@ const Header = () => {
                                             className="fal fa-envelope text-white"
                                             style={{ borderLeft: '2px solid #fff', paddingLeft: '10px', marginRight:"6px" }}
                                         ></i>
-                                        <a href="mailto:info@samratmasala.com" className="text-white email-id">
-                                            info@samratmasala.com
+                                        <a href="mailto:info@samratmasalaindia.com" className="text-white email-id">
+                                            info@samratmasalaindia.com
                                         </a>
                                     </div>
                                     <div className="col-auto">

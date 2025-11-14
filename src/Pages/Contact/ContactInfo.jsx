@@ -22,10 +22,10 @@ const ContactInfo = () => {
       icon: "fas fa-envelope",
       title: "Email Address", 
       details: [
-        "info@samratmasala.com",
-        "support@samratmasala.com"
+        "info@samratmasalaindia.com",
+        "support@samratmasalaindia.com"
       ],
-      link: "mailto:info@samratmasala.com"
+      link: "mailto:info@samratmasalaindia.com"
     },
     {
       icon: "fas fa-clock",

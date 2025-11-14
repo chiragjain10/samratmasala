@@ -20,7 +20,7 @@ const Terms = () => {
     },
     {
       title: 'Contact',
-      text: 'For any questions regarding these Terms, please contact us at info@samratmasala.com.'
+      text: 'For any questions regarding these Terms, please contact us at info@samratmasalaindia.com.'
     }
   ]
 

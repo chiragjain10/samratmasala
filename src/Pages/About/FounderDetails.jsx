@@ -20,7 +20,7 @@ const FounderDetails = () => {
                 Our Founder
               </span>
               <h2 className="sec-title" data-aos="fade-up">The Founding Story of Samrat Masale</h2>
-              <p className="sec-text" data-aos="fade-up">The foundation of Samrat Masale was established in 1968 by Shri Shyamsundar Ji Vijayvergiya. At that time,
+              <p className="sec-text" data-aos="fade-up">The foundation of Samrat Masale was established in 1965 by Shri Shyamsundar Ji Vijayvergiya. At that time,
                 Indian households typically sourced whole spices and ground them at home (masale ghar par taiyar kiye jate the)
                 to ensure freshness and purity. Recognizing a clear need and opportunity, he pioneered a high‑quality,
                 ready‑to‑use alternative to the laborious home‑grinding process.

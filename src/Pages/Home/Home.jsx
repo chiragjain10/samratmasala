@@ -16,7 +16,7 @@ const Home = () => {
                         <div className="col-md-6">
                             <div className="contents">
                                 <h2>59+ Years of Crafting Pure Spice Excellence.</h2>
-                                <p>Since 1968, spicing every Indian kitchen with tradition, where every spice reflects timeless heritage and a promise of wholesome delight.</p>
+                                <p>Since 1965, spicing every Indian kitchen with tradition, where every spice reflects timeless heritage and a promise of wholesome delight.</p>
                             </div>
                         </div>
                         <div className="col-md-6"></div>
