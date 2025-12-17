@@ -3,9 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Home from './Pages/Home/Home'
-import AboutPage from './Pages/About'
 import ProductDetails from './Pages/Product/'
-import './App.css'
 import Contact from './Pages/Contact/Index'
 import Whatsapp from './components/Common/Whatsapp'
 import Terms from './components/Common/Terms'
@@ -13,6 +11,11 @@ import PageNotFound from './components/Common/PageNotFound'
 import Preloader from './components/Common/Preloader'
 import PopupForm from './components/Common/PopupForm'
 import FAQ from './components/Common/FAQ'
+import AboutLayout from './Pages/About/AboutLayout.jsx';
+import CompanyProfile from './Pages/About/CompanyProfile.jsx';
+import HistoryMissionVision from './Pages/About/HistoryMissionVision.jsx';
+import DirectorsDesk from './Pages/About/DirectorsDesk.jsx';
+import './App.css'
 
 function App() {
   const location = useLocation()
@@ -94,7 +97,13 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/about" element={<AboutLayout />} />
+         <Route path="/about" element={<AboutLayout />}>
+          <Route index element={<CompanyProfile />} />
+          <Route path="profile" element={<CompanyProfile />} />
+          <Route path="history-mission-vision" element={<HistoryMissionVision />} />
+          <Route path="directors-desk" element={<DirectorsDesk />} />
+        </Route>
         <Route path="/products/:productSlug" element={<ProductDetails />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<Terms />} />

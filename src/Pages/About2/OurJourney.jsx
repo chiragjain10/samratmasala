@@ -5,7 +5,7 @@ const OurJourney = () => {
     {
       year: "—",
       title: "Foundation",
-      description: "The foundation of Samrat Masale was established by Shri Shyamsundar Ji Vijayvergiya."
+      description: "The foundation of Samrat Masale was established by Shri Shyamsundar Ji Vijayvargiya."
     },
     {
       year: "—",

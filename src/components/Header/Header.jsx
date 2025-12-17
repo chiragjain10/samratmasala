@@ -3,9 +3,14 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const toggleAboutDropdown = () => {
+        setIsAboutDropdownOpen(!isAboutDropdownOpen);
     };
 
     // Samrat Masala ke products
@@ -14,6 +19,13 @@ const Header = () => {
         { name: "Coriander Powder", path: "/products/coriander-powder" },
         { name: "Garam Masala", path: "/products/garam-masala" },
         { name: "Red Chilli Powder", path: "/products/red-chilli-powder" }
+    ];
+
+    // About ke dropdown items
+    const aboutPages = [
+        { name: "Company Profile", path: "/about/profile" },
+        { name: "History, Mission & Vision", path: "/about/history-mission-vision" },
+        { name: "Director's Desk", path: "/about/directors-desk" },
     ];
 
     const location = useLocation();
@@ -37,11 +49,18 @@ const Header = () => {
                             <li className={`${isActive('/', true) ? 'nav-active' : ''}`}>
                                 <Link to="/">Home</Link>
                             </li>
-                            <li className={`${isActive('/about', true) ? 'nav-active' : ''}`}>
-                                <Link to="/about">About Us</Link>
+                            <li className={`menu-item-has-children ${isActive('/about') ? 'nav-active' : ''}`}>
+                                <Link to="/about/profile">About Us</Link>
+                                <ul className="sub-menu">
+                                    {aboutPages.map((page, index) => (
+                                        <li key={index}>
+                                            <Link to={page.path}>{page.name}</Link>
+                                        </li>
+                                    ))}
+                                </ul>
                             </li>
                             <li className={`menu-item-has-children ${isActive('/products') ? 'nav-active' : ''}`}>
-                                <Link to="/contact">Products</Link>
+                                <Link to="/products">Products</Link>
                                 <ul className="sub-menu">
                                     {products.map((product, index) => (
                                         <li key={index}>
@@ -130,11 +149,22 @@ const Header = () => {
                                                 <li className={`${isActive('/', true) ? 'nav-active' : ''}`}>
                                                     <Link to="/">Home</Link>
                                                 </li>
-                                                <li className={`${isActive('/about', true) ? 'nav-active' : ''}`}>
-                                                    <Link to="/about">About Us</Link>
+                                                <li 
+                                                    className={`menu-item-has-children ${isActive('/about') ? 'nav-active' : ''}`}
+                                                    onMouseEnter={() => setIsAboutDropdownOpen(true)}
+                                                    onMouseLeave={() => setIsAboutDropdownOpen(false)}
+                                                >
+                                                    <Link to="/about/profile">About Us</Link>
+                                                    <ul className={`sub-menu ${isAboutDropdownOpen ? 'show' : ''}`}>
+                                                        {aboutPages.map((page, index) => (
+                                                            <li key={index}>
+                                                                <Link to={page.path}>{page.name}</Link>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
                                                 </li>
                                                 <li className={`menu-item-has-children ${isActive('/products') ? 'nav-active' : ''}`}>
-                                                    <Link to="/contact">Products</Link>
+                                                    <Link to="/products">Products</Link>
                                                     <ul className="sub-menu">
                                                         {products.map((product, index) => (
                                                             <li key={index}>

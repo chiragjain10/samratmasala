@@ -2,25 +2,6 @@
   position: relative;
 }
 
-/* .about-hero {
-  position: relative;
-}
-
-.about-hero .row {
-  height: 850px;
-}
-
-.about-hero::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background: url(/images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-} */
-
 .about-hero-content .sub-title {
   display: inline-flex;
   align-items: center;
