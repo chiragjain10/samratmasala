@@ -6,23 +6,23 @@ const DirectorsDesk = () => {
     {
       name: "Shri Shyamsundar Ji Vijayvargiya",
       position: "Founder (1965)",
-      image: "/images/directors/founder.jpg",
+      image: "/images/founder/1.jpg",
       quote: "Our rise was built on core values: hard work, dedication, and pure, unadulterated quality that rivals the freshness of home-ground blends.",
       description: "Founded Samrat Masale with a vision to bring authentic, ready-to-use spices to Indian households. His entrepreneurial spirit and commitment to quality laid the foundation for a legacy that continues to thrive."
     },
     {
       name: "Mr. Rajesh Vijayvargiya",
       position: "Managing Director",
-      image: "/images/directors/rajesh-vijayvargiya.jpg",
+      image: "/images/founder/2.png",
       quote: "With excellent packaging and superior quality, we expanded our reach to multiple states in India.",
-      description: "After completing his higher education, Mr. Rajesh Vijayvargiya, along with his father, gave the Samrat Garam Masala business a new direction and expanded its business to other states in India. With his focus on quality and innovation, he successfully transformed the family business into a pan-India brand."
+      description: "Managing Director - Rajesh Vijayvargiya After completing his higher education, Mr. Rajesh Vijayvargiya, along with his father, gave the Samrat Garam Masala business a new direction and expanded its business to other states in India. With the excellent packaging and superior quality of his products, Rajesh Ji expanded his business."
     },
     {
       name: "Mr. Anirudh Vijayvargiya",
       position: "Director",
-      image: "/images/directors/anirudh-vijayvargiya.jpg",
+      image: "/images/founder/3.png",
       quote: "Combining traditional values with modern business acumen to revolutionize Indian retail.",
-      description: "Anirudh Vijayvargiya, after completing his MBA from London, not only took over his family business but also successfully transformed it with his knowledge. He launched a new revolution in Indian retail by introducing a full range of spices, bringing modern retail practices while preserving traditional quality standards."
+      description: "Director - Mr. Anirudh Vijayvargiya Anirudh Vijayvargiya, after completing his MBA from London, not only took over his family business but also successfully transformed it with his knowledge. Anirudh launched a new revolution in Indian retail by introducing a full range of spices."
     }
   ];
 
@@ -48,8 +48,8 @@ const DirectorsDesk = () => {
                 <div className="director-info">
                   <h4>{director.name}</h4>
                   <div className="position">{director.position}</div>
-                  <p className="quote">"{director.quote}"</p>
-                  <p className="description">{director.description}</p>
+                  {/* <p className="quote">"{director.quote}"</p> */}
+                  <p className="description" style={{ textAlign: "justify" }}>{director.description}</p>
                 </div>
               </div>
             ))}
